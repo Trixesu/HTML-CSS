@@ -155,7 +155,7 @@ button:hover {
 footer {
     text-align: center;
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
