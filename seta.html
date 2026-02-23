@@ -1,116 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Profil Saya</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi Paulus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <h1 align="center">Website Pribadi Saya</h1>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Paulus Seta</div>
+        <div class="menu">
+            <a href="#about">Tentang</a>
+            <a href="#hobi">Hobi</a>
+            <a href="#teman">Teman</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
 
-    <!-- PARAGRAPH ALIGNMENT -->
-    <p align="left">
-        Halo! Nama saya Paulus Seta. Saya seorang mahasiswa yang sedang belajar Programming.
-    </p>
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Website Pribadi Saya</h1>
+        <p>Mahasiswa yang sedang belajar Programming</p>
+    </header>
 
-    <p align="center">
-        Saya senang belajar programming dan membuat projek sederhana.
-    </p>
+    <!-- ABOUT -->
+    <section id="about" class="card">
+        <h2>Tentang Saya</h2>
+        <p>Halo! Nama saya Paulus Seta. Saya senang belajar programming dan membuat projek sederhana.</p>
+    </section>
 
-    <p align="right">
-        Terima kasih sudah mengunjungi halaman saya.
-    </p>
+    <!-- HOBI -->
+    <section id="hobi" class="card">
+        <h2>Hobi Saya</h2>
+        <div class="grid">
+            <div class="box">Main Game</div>
+            <div class="box">Menonton Film</div>
+            <div class="box">Belajar Coding</div>
+        </div>
+    </section>
 
-    <hr>
+    <!-- FOTO -->
+    <section class="card center">
+        <h2>Foto Favorit</h2>
+        <img src="./media/profil.png" alt="Foto Profil" class="profile-img">
+    </section>
 
-    <!-- FORMAT TEKS -->
-    <h2>Contoh Format Teks</h2>
-    <p>
-        Ini teks <b>bold</b><br>
-        Ini teks <i>italic</i><br>
-        Ini teks <u>underline</u><br>
-        Ini teks <span style="color:blue;">berwarna biru</span>
-    </p>
-
-    <hr>
-
-    <!-- LIST -->
-    <h2>Hobi Saya</h2>
-    <ul>
-        <li>Main game</li>
-        <li>Menonton film</li>
-        <li>Belajar coding</li>
-    </ul>
-
-    <h2>Jadwal Harian</h2>
-    <ol>
-        <li>Kuliah</li>
-        <li>Mengerjakan tugas</li>
-        <li>Belajar coding</li>
-    </ol>
-
-    <hr>
-
-    <!-- IMAGE -->
-    <h2>Foto Favorit</h2>
-    <img src="./media/profil.png" alt="my">
-
-    <hr>
-
-    <!-- HYPERLINK -->
-    <h2>Sosial Media</h2>
-    <p>
-        Kunjungi Media Sosial Saya :
-        <a href="https://github.com/Trixesu" target="_blank">
-            GitHub 
-        </a>
-        |
-        <a href="https://instagram.com/rantakaa" target="_blank">
-            Instagram
-        </a>
-        |
-        <a href="https://tiktok.com/@narantakaa" target="_blank">
-            TikTok
-        </a>
-    </p>
-
-    <hr>
+    <!-- SOSIAL MEDIA -->
+    <section class="card">
+        <h2>Sosial Media</h2>
+        <div class="social">
+            <a href="https://github.com/Trixesu" target="_blank">GitHub</a>
+            <a href="https://instagram.com/rantakaa" target="_blank">Instagram</a>
+            <a href="https://tiktok.com/@narantakaa" target="_blank">TikTok</a>
+        </div>
+    </section>
 
     <!-- TABEL -->
-    <h2>Data Teman</h2>
-    <table border="1" cellpadding="5">
-        <tr>
-            <th>Nama</th>
-            <th>Prodi</th>
-            <th>Hobi</th>
-        </tr>
-        <tr>
-            <td>Vio</td>
-            <td>TM</td>
-            <td>Badminton</td>
-        </tr>
-        <tr>
-            <td>Farrel</td>
-            <td>TM</td>
-            <td>Futsal</td>
-        </tr>
-    </table>
-
-    <hr>
+    <section id="teman" class="card">
+        <h2>Data Teman</h2>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Prodi</th>
+                <th>Hobi</th>
+            </tr>
+            <tr>
+                <td>Vio</td>
+                <td>TM</td>
+                <td>Badminton</td>
+            </tr>
+            <tr>
+                <td>Farrel</td>
+                <td>TM</td>
+                <td>Futsal</td>
+            </tr>
+        </table>
+    </section>
 
     <!-- FORM -->
-    <h2>Form Kontak</h2>
-    <form action="#">
-        Nama: <br>
-        <input type="text"><br><br>
+    <section id="kontak" class="card">
+        <h2>Form Kontak</h2>
+        <form>
+            <input type="text" placeholder="Nama">
+            <textarea placeholder="Pesan"></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
 
-        Pesan:<br>
-        <textarea></textarea><br><br>
-
-        <input type="submit" value="Kirim">
-    </form>
+    <footer>
+        <p>© 2026 Paulus Seta | Dibuat dengan HTML & CSS</p>
+    </footer>
 
 </body>
 </html>
