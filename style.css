@@ -177,9 +177,13 @@ footer {
     .social {
         flex-direction: column;
     }
+
+    .social a i {
+        margin-right: 8px;
+        font-size: 18px;
+    }
 }
 
-/* HOBI DROPDOWN */
 .hobi-container {
     display: flex;
     flex-direction: column;
